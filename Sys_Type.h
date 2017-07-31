@@ -8,21 +8,17 @@
 	
 #include "Sys_Type.h"
 
-typedef unsigned long int sys_uint32;
-typedef long int sys_int32;
-typedef unsigned char sys_uchar8 ;
-typedef char sys_char8 ;
- int a = 32 ；
-if( )
+typedef unsigned long int sys_u32t ;
+typedef long int sys_32t ;
+typedef unsigned char sys_u8t ;
+typedef char sys_8t ;
+//
+typedef signed long int sys_error_t ; //用来记录系统错误号的类型
+typedef long int sys_stack_t ; //系统的栈数据类型
 
-struct test{
-	int a;
-	float b ;
-} test1;
-	test test_inst ;
-	test_inst
+typedef unsigned long int sys_prio_t ; //用来记录各个任务（可用于系统任务以及应用任务）优先级的类型
+typedef unsigned long int sys_stklen_t ; //用来记录各个任务的堆栈的长度的数据类型
 
-sys_uint32 test ;
 
 
 #endif //SYS_TYPE_H
